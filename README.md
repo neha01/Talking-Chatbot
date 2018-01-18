@@ -12,10 +12,10 @@ Copy entire directory to your machoine and click on index.html file.
 ### Prerequisites
 
 Host 'Brain.rive' file on a server.
-
 For Chrome browser download "Webserver for chrome" extension
 
-###Demo
+### Demo
+
 Watch the Demo here: https://youtu.be/mr1OXPNGrnY
 
 
