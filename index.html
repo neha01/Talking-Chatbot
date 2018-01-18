@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>chatbot</title>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="p5.js"></script>
+    <script src="lib/p5.dom.min.js"></script>
+    <script src="lib/p5.sound.min.js"></script>
+    <script src="lib/p5.speech.js"></script>
+    <script src="sketch.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+         .fixed-panel {
+                min-height: 400px;
+                max-height: 400px;
+                background-color: #ffffff;
+                overflow: auto;
+                       }
+            
+			.media-list {
+
+              overflow: auto;
+      clear: both;
+      display: table;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: normal;
+      line-break: strict;  
+      color:#000;
+           }
+      .panel {
+     
+      background-color: #fff;
+      border: 6px solid transparent;
+      border-radius: 25px;
+      -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      box-shadow: 0 1px 1px rgba(0,0,0,.05);
+      }
+      .panel-info {
+      border-color: #62b0ef;
+      }
+      .panel-info>.panel-heading {
+      color: #fff;
+      background-color: #62b0ef;
+      border-color: #62b0ef;
+      }
+	  .awesome-icon{
+	  color:#000;
+	  }
+      .panel-footer {
+      padding: 10px 15px;
+      background-color: #62b0ef;
+      border-top: 1px solid #62b0ef;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      }
+
+      .btn {
+        background-color: #15b653;
+      }
+      
+      body {
+      
+      background: rgb(96,143,149); 
+      background: -moz-linear-gradient(-45deg, rgba(96,143,149,1) 0%, rgba(0,133,136,1) 0%, rgba(12,36,73,1) 0%, rgba(26,30,59,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, rgba(96,143,149,1) 0%,rgba(0,133,136,1) 0%,rgba(12,36,73,1) 0%,rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(0deg, rgba(96,143,149,1) 0%,rgba(0,133,136,1) 0%,rgba(12,36,73,1) 0%,rgba(255, 250, 240, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            }
+    </style>
+    </head>
+  <body>
+        <div class="container">
+      
+           <div class="row">
+                <h3 class="text-center"><font color="black" > <strong>CHATBOT!!!</strong> </font></h3>
+
+                <div class="col-md-4 col-md-offset-4">
+                    <div id="chatPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                    <span class="awesome-icon"><i class="fa fa-user-secret"></i></span> <strong>Talk with Me !!!</strong>
+                        </div>
+                        <div class="panel-body fixed-panel">
+                            <ul class="media-list">
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post" id="chatbot-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter Message" name="messageText" id="messageText" autofocus/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn">SEND <span class="glyphicon glyphicon-hand-up"></span></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        
+        </body>
+</html>
