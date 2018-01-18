@@ -6,7 +6,7 @@ Rivescript is a scripting language for chatbots and here all the replies are pro
 p5.js speech libaray is used to convert bot's reply into speech.
 
 ## Getting Started
-Copy entire directory to your machoine and click on index.html file.
+Copy entire directory to your machine and click on index.html file.
 
 
 ### Prerequisites
